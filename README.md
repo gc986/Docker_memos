@@ -4,6 +4,8 @@
 <h2>Скрипт сборки образа <b>Dockfile</b></h2>
 В файле Dockerfile находится скрипт сборки образа для Docker. 
 Весь код:
+<br>
+<br>
 
 <i>
 FROM ubuntu:latest <br>
