@@ -53,8 +53,8 @@ RUN apt-get install -y openjdk-11-jdk</b>
 <h1>docker-compose</h1>
 docker-compose необходим для запуска большого количества связанных контейнеров. По хорошему, все контейнеры должны запускаться с помощью docker-compose.
 
-<h2>Установка docker-compose</h2>
+<h3>Установка docker-compose</h3>
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-<h2>Создание файла настройки</h2>
+<h3>Создание файла настройки</h3>
 Чтобы настроить исполнитель docker-compose, нужно создать файл <i>docker-compose.yaml</i>
