@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<i>
+<i><b>
 FROM ubuntu:latest <br>
 LABEL maintainer="gc986" <br>
 RUN apt-get update  <br>
@@ -15,7 +15,7 @@ RUN apt-get upgrade -y <br>
 RUN apt-get install -y openjdk-11-jdk <br>
 COPY KtorTest ./server <br>
 CMD cd server && ./gradlew run <br>
-</i>
+</b></i>
 
 Разберём всё построчно:
 
