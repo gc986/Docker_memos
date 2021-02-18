@@ -1,6 +1,9 @@
 # Docker_memos
 Данный репозиторий содержит пример сборки и работы с образами Docker.
 
+<h2>Установка Docker</h2>
+Заместо тысячи слов. Надеюсь всё будет понятно :) https://docs.docker.com/engine/install/ubuntu/
+
 <h2>Скрипт сборки образа <b>Dockfile</b></h2>
 В файле Dockerfile находится скрипт сборки образа для Docker. 
 Весь код:
@@ -45,3 +48,13 @@ RUN apt-get install -y openjdk-11-jdk</b>
 <h2>Запуск только что созданного образа</h2>
 Образ запускается с помощью команды: <i>docker run --name KTor -p 8080:8080 test-image</i>
 Помимо запуска образа test-image, данная команда перебрасывает порты которые будут запущены в контейнере, на порты локальной машины (-p 8080:8080). Ещё, нзначается имя для запущенного контейнера (--name KTor).
+
+
+<h1>docker-compose</h1>
+docker-compose необходим для запуска большого количества связанных контейнеров. По хорошему, все контейнеры должны запускаться с помощью docker-compose.
+
+<h2>Установка docker-compose</h2>
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+<h2>Создание файла настройки</h2>
+Чтобы настроить исполнитель docker-compose, нужно создать файл <i>docker-compose.yaml</i>
